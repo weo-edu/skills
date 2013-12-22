@@ -1,0 +1,12 @@
+{
+  "name": "skills",
+  "remotes": [],
+  "dependencies": {
+    "component/moment": "*",
+    "segmentio/modal": "*",
+    "stagas/mod-player": "*",
+    "CamShaft/bootstrap-sprites": "*",
+    "monstercat/rating": "*"
+  },
+  "version": "0.0.1"
+}

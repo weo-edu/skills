@@ -1,0 +1,10 @@
+<div ng-controller='TagListCtrl as TagList'>
+  <form ng-submit='TagList.search(query)'>
+    <input type='text' ng-model='query' />
+  </form>
+  <ul>
+    <li ng-repeat='tag in TagList.tags'>
+      <a ng-href='/tag/{{tag.id}}'>{{tag.name}}</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,10 @@
+<div ng-controller='SkillListCtrl as SkillList'>
+  <form ng-submit='SkillList.search(query)'>
+    <input type='text' ng-model='query' />
+  </form>
+  <ul>
+    <li ng-repeat='skill in SkillList.skills'>
+      <a ng-href='/skill/{{skill.id}}'>{{skill.name}}</a>
+    </li>
+  </ul>
+</div>

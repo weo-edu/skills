@@ -1,0 +1,27 @@
+<div ng-controller='SkillFormCtrl as SkillForm'>
+  <ng-form validators="SkillForm.skill.validators">
+    <label for='name'>Name:</label>
+    <input ng-model='SkillForm.skill.name' type='text' name='name' id='name' />
+    <br />
+    <label for='description'>Description:</label>
+    <input ng-model='SkillForm.skill.description' type='text' name='description' id='description' />
+    <br />
+    <label for='grade'>Grade:</label>
+    <select ng-model='SkillForm.skill.grade'>
+      <option value='{{$index+1}}' ng-repeat='grade in 1 | range:13'>{{$index+1}}</option>
+    </select>
+    <br />
+    <label for='subject'>Subject:</label>
+    <input ng-model='SkillForm.skill.subject' type='text' name='subject' id='subject' />
+    <br />
+    <label for='topic'>Topic:</label>
+    <input ng-model='SkillForm.skill.topic' type='text' name='topic' id='topic' />
+    <br />
+    <label for='commonCore'>Common Core (optional):</label>
+    <input ng-model='SkillForm.skill.commonCore' type='text' name='commonCore' id='commonCore' />
+    <br />
+    <label for='tags'>Tags: </label>
+    <input ng-list ng-model='SkillForm.skill.tags' type='text' name='tags' id='tags' />
+    <button ng-click='SkillForm.skill.$save()' type='submit'>Save</button>
+  </ng-form>
+</div>
