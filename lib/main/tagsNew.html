@@ -1,26 +1,25 @@
-<div ng-controller='TagFormCtrl as TagForm'>
-  <ng-form validators="TagForm.tag.validators">
-    <label>Name:
-      <input ng-model='TagForm.tag.name' type='text' name='name' />
-    </label>
-    <br />
-    <label>
-        Type:
-        <select ng-model='TagForm.tag.type' name='type'>
-            <option value='general'>General</option>
-            <option value='commonCore'>Common Core</option>
-            <option value='subject'>Subject</option>
-            <option value='topic'>Topic</option>
-        </select>
-    </label>
+<div model-form="Tag">
+  <label>Name:
+    <input ng-model='ModelForm.model.name' type='text' name='name' />
+  </label>
+  <br />
+  <label>
+      Type:
+      <select ng-model='ModelForm.model.type' name='type'>
+          <option value='general'>General</option>
+          <option value='commonCore'>Common Core</option>
+          <option value='subject'>Subject</option>
+          <option value='topic'>Topic</option>
+      </select>
+  </label>
 
-    <label>Excerpt:
-      <textarea ng-model='TagForm.tag.excerpt' type='text' name='excerpt'></textarea>
-    </label>
-    <br />
-    <label>Description:
-      <textarea ng-model='TagForm.tag.description' type='text' name='description'></textarea>
-    </label>
-    <button ng-click='TagForm.tag.$save(); $$log(TagForm.tag)' type='submit'>Save</button>
-  </ng-form>
-</div>
+  <label>Excerpt:
+    <textarea ng-model='ModelForm.model.excerpt' type='text' name='excerpt'></textarea>
+  </label>
+  <br />
+  <label>Description:
+    <textarea ng-model='ModelForm.model.description' type='text' name='description'></textarea>
+  </label>
+  <button ng-disabled='ModelForm.form.$invalid' ng-click='ModelForm.action("$save")' type='submit'>Save</button><span ng-show='ModelForm.status("$save").loading' model-href='$save /'>Loading</span>
+  <div ng-show='ModelForm.status("$save").error'>Server Error</span>
+</ng-form>
