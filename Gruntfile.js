@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   grunt.loadTasks('grunt/');
   require('./grunt/grunt-watchify/tasks/watchify.js')(grunt);
 
- // grunt.task.run('registerTests:./lib/');
+  grunt.task.run('registerTests:./lib/');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
