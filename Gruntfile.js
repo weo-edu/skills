@@ -79,6 +79,16 @@ module.exports = function (grunt) {
       lib: {
         src: 'lib/**',
         dest: 'public/'
+      },
+      bower: {
+        src: 'bower/**',
+        dest: 'public/'
+      }
+    },
+    concat: {
+      bower: {
+        src: 'bower/*/*.css',
+        dest: 'public/bower.css'
       }
     },
     symlink: {
@@ -154,7 +164,7 @@ module.exports = function (grunt) {
     'develop', 'watchDeps', 'watch']);
 
   // dev build
-  var buildTasks = ['symlink', 'clean:build', 'copy:lib', 'genCssImports'];
+  var buildTasks = ['symlink', 'clean:build', 'copy:lib', 'copy:bower', 'concat:bower', 'genCssImports'];
   grunt.registerTask('dev-build', buildTasks.concat('shell:component-dev', 'sass:libDev'));
 
   // production build

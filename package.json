@@ -20,7 +20,8 @@
     "grunt-browserify": "~1.2.12",
     "grunt-contrib-uglify": "~0.2.7",
     "grunt-contrib-cssmin": "~0.7.0",
-    "hashids": "~0.3.3"
+    "hashids": "~0.3.3",
+    "grunt-contrib-concat": "~0.3.0"
   },
   "devDependencies": {
     "grunt-contrib-jasmine": "~0.5.2",
