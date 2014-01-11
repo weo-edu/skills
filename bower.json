@@ -12,6 +12,7 @@
     "angular-resource": "~1.2.6",
     "angular-route": "~1.2.6",
     "angular-ui-select2": "~0.0.5",
-    "select2": "~3.4.5"
+    "select2": "~3.4.5",
+    "angils": "~0.0.4"
   }
 }

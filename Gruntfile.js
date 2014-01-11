@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         transform: [
           require('./grunt/browserify-transforms/dereqify.js'),
           require('./grunt/browserify-transforms/deerrorify.js').transform,
-          require('./grunt/browserify-transforms/dehtmlify.js'),
+          'dehtmlify',
           'decomponentify',
           'debowerify'
         ],

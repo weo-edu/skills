@@ -1,0 +1,32 @@
+{
+  "author": {
+    "name": "Andy Joslin"
+  },
+  "name": "promise-tracker",
+  "description": "Easily add spinners or general request tracking to your angular app.",
+  "version": "1.4.2",
+  "homepage": "http://github.com/ajoslin/angular-promise-tracker",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajoslin/angular-promise-tracker"
+  },
+  "license": "Public Domain",
+  "main": "./promise-tracker.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Makefile",
+    "lib",
+    "*.spec.js"
+  ],
+  "devDependencies": {
+    "angular": "1.0.6",
+    "angular-mocks": "1.0.6",
+    "angular-unstable": "1.1.5"
+  },
+  "gitHead": "11f48309e209afd1a5b9da0fb721b95f68aa90bb",
+  "readme": "angular-promise-tracker\n=======================\n\n* [Demo](http://plnkr.co/edit/3uAe0NdXLz1lCYlhpaMp?p=preview)\n* [Help](https://github.com/ajoslin/angular-promise-tracker/wiki)\n* [Changes](https://github.com/ajoslin/angular-promise-tracker/tree/master/CHANGELOG.md)\n* [License](#license)\n\n\n## Eh, what?\n\nSo you're building your angular app.  And you want a loading spinner.\n\nYou've tried the [normal solution](http://jsfiddle.net/zdam/dBR2r/) (or maybe you haven't), and it has problems.  It presents a loading spinner on *every request*!\n\nBut you don't want the same global loading spinner whenever any request happens anywhere. That just won't work!\n\nInstead, you want different indicators while different types of request are loading.  You want one spinner while you're fetching data having to do with a user's pizza order, one while fetching user's profile data, and maybe another for some random service you have that returns a promise. All these on different parts of the UI.  Heck, maybe you don't even want a spinner.  You just want to know while http requests of some type are pending.\n\nWell, [sigh no more](http://www.youtube.com/watch?v=eltHv58l8ig) my dear friend, your troubles are over.\n\n## Ok, sounds jolly good! How do I get started?\n\nCheck out [the wiki](https://github.com/ajoslin/angular-promise-tracker/wiki#wiki-intro)!\n\n\n## Development\n\n* Install karma & grunt with `npm install -g karma grunt-cli` to build & test\n* Install local dependencies with `bower install && npm install`\n* Run `grunt` to lint, test, build the code, and build the docs site\n\n## <a id=\"license\"></a>License\n\n> <a rel=\"license\" href=\"http://creativecommons.org/publicdomain/mark/1.0/\"> <img src=\"http://i.creativecommons.org/p/mark/1.0/80x15.png\" style=\"border-style: none;\" alt=\"Public Domain Mark\" /> </a> <span property=\"dct:title\">angular-promise-tracker</span> by <a href=\"http://andybam.com\" rel=\"dct:creator\"><span property=\"dct:title\">Andy Joslin</span></a> is free of known copyright restrictions.\n",
+  "readmeFilename": "README.md",
+  "_id": "promise-tracker@1.4.2"
+}

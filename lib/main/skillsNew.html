@@ -11,16 +11,16 @@
   </select>
   <br />
   <label for='subject'>Subject:</label>
-  <div tag-select='Tag.query({type: "subject"})' one="true" ng-model='ModelForm.model.subject' type='text' name='subject' id='subject'></div>
+  <input ng-model='ModelForm.model.subject' type='text' name='subject' id='subject'/>
   <br />
   <label for='topic'>Topic:</label>
-  <div tag-select='Tag.query({type: "topic"})' one="true" ng-model='ModelForm.model.topic' type='text' name='topic' id='topic'></div>
+  <input ng-model='ModelForm.model.topic' type='text' name='topic' id='topic'/>
   <br />
   <label for='commonCore'>Common Core (optional):</label>
   <div tag-select='Tag.query({type: "commonCore"})' one="true" ng-model='ModelForm.model.commonCore' type='text' name='commonCore' id='commonCore'></div>
   <br />
   <label for='tags'>Tags: </label>
-  <div tag-select='Tag.query({type: "commonCore"})' ng-model='ModelForm.model.tags' name='tags' id='tags'></div>
+  <div tag-select='Tag.query({type: "general"})' ng-model='ModelForm.model.tags' name='tags' id='tags'></div>
   <button ng-disabled='ModelForm.form.$invalid' ng-click='ModelForm.action("$save")'>Save</button><span ng-show='ModelForm.status("$save").loading' model-href='$save /'>Loading</span>
   <div ng-show='ModelForm.status("$save").error'>Server Error</span>
 </div>

@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp-watch',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.5
+3 info using node@v0.10.15
+4 warn package.json skills@0.0.1 No description
+5 warn package.json skills@0.0.1 No repository field.
+6 warn package.json skills@0.0.1 No README data
+7 warn package.json css-whitespace@1.1.0 No repository field.
+8 warn package.json rework-mixins@1.1.1 No repository field.
+9 warn package.json string-to-js@0.0.1 No repository field.
+10 warn package.json mang-models@0.0.0 No README data
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'gulp-watch', null ]
+13 verbose cache add name=undefined spec="gulp-watch" args=["gulp-watch",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'gulp-watch',
+14 verbose parsed url   path: 'gulp-watch',
+14 verbose parsed url   href: 'gulp-watch' }
+15 silly lockFile 4220564f-gulp-watch gulp-watch
+16 verbose lock gulp-watch /Users/joshtaylor/.npm/4220564f-gulp-watch.lock
+17 silly lockFile 4220564f-gulp-watch gulp-watch
+18 silly lockFile 4220564f-gulp-watch gulp-watch
+19 verbose addNamed [ 'gulp-watch', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile aa056385-gulp-watch gulp-watch@
+22 verbose lock gulp-watch@ /Users/joshtaylor/.npm/aa056385-gulp-watch.lock
+23 silly addNameRange { name: 'gulp-watch', range: '*', hasData: false }
+24 verbose url raw gulp-watch
+25 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-watch' ]
+26 verbose url resolved https://registry.npmjs.org/gulp-watch
+27 info trying registry request attempt 1 at 19:56:24
+28 http GET https://registry.npmjs.org/gulp-watch
+29 http 200 https://registry.npmjs.org/gulp-watch
+30 silly registry.get cb [ 200,
+30 silly registry.get   { date: 'Wed, 08 Jan 2014 03:56:24 GMT',
+30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+30 silly registry.get     etag: '"8Y591646QTAJ89QYQKSRCSYH0"',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     'content-length': '118256',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     'x-served-by': 'cache-sv94-SJC3',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1389153384.665765524,VS0,VE72',
+30 silly registry.get     vary: 'Accept',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 silly addNameRange number 2 { name: 'gulp-watch', range: '*', hasData: true }
+32 silly addNameRange versions [ 'gulp-watch',
+32 silly addNameRange   [ '0.0.1',
+32 silly addNameRange     '0.0.2',
+32 silly addNameRange     '0.0.3',
+32 silly addNameRange     '0.0.4',
+32 silly addNameRange     '0.1.0',
+32 silly addNameRange     '0.1.1',
+32 silly addNameRange     '0.1.2',
+32 silly addNameRange     '0.1.3',
+32 silly addNameRange     '0.2.0',
+32 silly addNameRange     '0.2.1',
+32 silly addNameRange     '0.2.2',
+32 silly addNameRange     '0.2.3',
+32 silly addNameRange     '0.2.4',
+32 silly addNameRange     '0.2.5',
+32 silly addNameRange     '0.2.6',
+32 silly addNameRange     '0.2.7',
+32 silly addNameRange     '0.3.0',
+32 silly addNameRange     '0.3.1',
+32 silly addNameRange     '0.3.2',
+32 silly addNameRange     '0.3.3' ] ]
+33 verbose addNamed [ 'gulp-watch', '0.3.3' ]
+34 verbose addNamed [ '0.3.3', '0.3.3' ]
+35 silly lockFile c452ccd6-gulp-watch-0-3-3 gulp-watch@0.3.3
+36 verbose lock gulp-watch@0.3.3 /Users/joshtaylor/.npm/c452ccd6-gulp-watch-0-3-3.lock
+37 silly lockFile c00425d1--gulp-watch-gulp-watch-0-3-3-tgz https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz
+38 verbose lock https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz /Users/joshtaylor/.npm/c00425d1--gulp-watch-gulp-watch-0-3-3-tgz.lock
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz',
+39 verbose addRemoteTarball   '114ac199260a72c077c1720589fa14202633a95b' ]
+40 info retry fetch attempt 1 at 19:56:25
+41 verbose fetch to= /var/folders/1r/vjq9r5394b301rtxt5mmd88h0000gn/T/npm-94988-TkefzFL6/1389153385284-0.33804538147524/tmp.tgz
+42 http GET https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz
+43 http 404 https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz
+44 error fetch failed https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz
+45 silly lockFile c00425d1--gulp-watch-gulp-watch-0-3-3-tgz https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz
+46 silly lockFile c00425d1--gulp-watch-gulp-watch-0-3-3-tgz https://registry.npmjs.org/gulp-watch/-/gulp-watch-0.3.3.tgz
+47 silly lockFile c452ccd6-gulp-watch-0-3-3 gulp-watch@0.3.3
+48 silly lockFile c452ccd6-gulp-watch-0-3-3 gulp-watch@0.3.3
+49 silly lockFile aa056385-gulp-watch gulp-watch@
+50 silly lockFile aa056385-gulp-watch gulp-watch@
+51 error Error: 404 Not Found
+51 error     at WriteStream.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/fetch.js:57:12)
+51 error     at WriteStream.EventEmitter.emit (events.js:117:20)
+51 error     at fs.js:1596:14
+51 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:103:5
+51 error     at Object.oncomplete (fs.js:107:15)
+52 error If you need help, you may report this log at:
+52 error     <http://github.com/isaacs/npm/issues>
+52 error or email it to:
+52 error     <npm-@googlegroups.com>
+53 error System Darwin 13.0.0
+54 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "gulp-watch" "--save"
+55 error cwd /Users/joshtaylor/Repositories/skills
+56 error node -v v0.10.15
+57 error npm -v 1.3.5
+58 verbose exit [ 1, true ]
